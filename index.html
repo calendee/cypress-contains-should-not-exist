@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <title>HTML5 boilerplate – all you really need…</title>
+</head>
+
+<body>
+    <div>
+            <p id="test">Test Paragraph</p>
+    </div>
+    <button id="delete-button">Delete Test Paragraph</button>
+
+    <script>
+        let deleteButton = document.querySelector('#delete-button');
+        console.log('Delete button = ', deleteButton);
+
+        deleteButton.addEventListener('click', () => {
+            console.log('Delete the test paragraph');
+            document.querySelector('#test').remove();
+        });
+    </script>
+
+</body>
+</html>
